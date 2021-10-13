@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'GillSansLightC';
+  font-display: swap;
+  src: local('GillSans Ligh'),
+       url('../Style/fonts/GillSansLightC.woff2') format('woff2'), 
+       url('../Style/fonts/GillSansLightC.woff') format('woff'), /* modern browser that support web open font */
+       url('../Style/fonts/GillSansLightC.ttf') format('truetype'), /* browsers that support true type */
+	   url('../Style/fonts/GillSansLightC.eot'), /* this will be applied from IE 9 compatibility mode*/
+       url('../Style/fonts/GillSansLightC.eot?#iefix') format('embedded-opentype');   /* IE prior versions */
+}
+
+* {font-family:GillSansLightC;}
+
