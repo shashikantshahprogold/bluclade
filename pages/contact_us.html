@@ -147,345 +147,7 @@ version="1.0" encoding="utf-8" ?>
             }
         </style>
         <!-- end banner image css  -->
-        <style>
-            .nav__toggle {
-                position: absolute;
-                cursor: pointer;
-                margin: 0rem 1rem;
-                right: 45px;
-                top: -52px;
-            }
-            /* .nav {
-            border-bottom: 1px solid grey;
-        } */
-            
-            .close,
-            input[type="checkbox"] {
-                display: none;
-            }
-            
-            .hamburger {
-                margin-top: 0.2rem;
-            }
-            /* .nav__menu {
-            display: flex;
-            flex-direction: column;         
-            gap: 2rem;
-            align-items: center;
-            margin: 1rem;
-        } */
-            /* li {
-            list-style: none;
-            display: none;
-        } */
-            /* li:first-child {
-            margin-right: auto;
-            display: block;
-        } */
-            
-            .nav__menu a {
-                text-decoration: none;
-                color: initial;
-                font-size: 1.2rem;
-            }
-            
-            #nav__checkbox:checked~ul.nav__menu li {
-                display: block;
-            }
-            
-            #nav__checkbox:checked~label.nav__toggle .hamburger {
-                display: none;
-            }
-            
-            #nav__checkbox:checked~label.nav__toggle .close {
-                display: block;
-            }
-            
-            @media only screen and (min-width: 768px) {
-                /* .nav__toggle {
-                display: none;
-            } */
-                .nav__menu {
-                    flex-direction: row;
-                }
-                .nav__menu li {
-                    display: block;
-                }
-            }
-            /* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-            
-            @media (min-width: 1281px) {
-                /* CSS */
-                .mobile {
-                    visibility: hidden;
-                    clear: both;
-                    display: none;
-                }
-                .map-width {
-                    width: 50%;
-                }
-                .iframe-container iframe {
-                    /* height: 70%;
-                 width: 70%; */
-                    width: 1280px;
-                    height: 720px;
-                }
-                .font-size-card {
-                    font-size: 20px;
-                }
-                /* video {
-                     width: 80%;
-                     max-height: 80%;
-                     margin: auto;
-                 } */
-            }
-            /* 
-##Device = Laptops, Desktops
-##Screen = B/w 1025px to 1280px
-*/
-            
-            @media (min-width: 1025px) and (max-width: 1280px) {
-                /* CSS */
-                .mobile {
-                    visibility: hidden;
-                    clear: both;
-                    display: none;
-                }
-                .map-width {
-                    width: 50%;
-                }
-                .iframe-container iframe {
-                    width: 1280px;
-                    height: 720px;
-                }
-                .font-size-card {
-                    font-size: 20px;
-                }
-                /* video {
-                     width: 100%;
-                     max-height: 100%;
-                 } */
-            }
-            /* ----------- iPad Pro ----------- */
-            /* Portrait and Landscape */
-            /* @media (min-width: 1024px) {
-                 
-                 .mobile {
-                     visibility: hidden;
-                     clear: both;
-                     display: none;
-                 }
-                 .map-width {
-                     width: 50%;
-                 }
-                 .Master_Header_Menu_Horizontal {
-                     position: sticky;
-                 }
-                 .Master_Header_Menu_Horizontal ul li {
-                     display: none;
-                     line-height: 50px;
-                     padding: 0px 15px;
-                     text-align: center;
-                 }
-                 .iframe-container iframe {
-                     height: 30%;
-                     width: 80%;
-                 }
-                 .col-25 {
-                     margin: auto;
-                     width: 70%;
-                     margin-top: 5px;
-                 }
-                 .font-size-card {
-                     font-size: 16px;
-                 }
-             } */
-            /* 
-##Device = Tablets, Ipads (portrait)
-##Screen = B/w 768px to 1024px
-*/
-            
-            @media (min-width: 768px) and (max-width: 1024px) {
-                /* CSS */
-                .mobile {
-                    visibility: hidden;
-                    clear: both;
-                    display: none;
-                }
-                .map-width {
-                    width: 50%;
-                }
-                .Master_Header_Menu_Horizontal {
-                    position: sticky;
-                }
-                .Master_Header_Menu_Horizontal ul li {
-                    display: none;
-                    line-height: 50px;
-                    padding: 0px 15px;
-                    text-align: center;
-                }
-                .iframe-container iframe {
-                    height: 30%;
-                    width: 80%;
-                }
-                .col-25 {
-                    margin: auto;
-                    width: 70%;
-                    margin-top: 5px;
-                }
-                .font-size-card {
-                    font-size: 16px;
-                }
-                video {
-                    width: 100%;
-                    max-height: 100%;
-                }
-            }
-            /* 
-##Device = Tablets, Ipads (landscape)
-##Screen = B/w 768px to 1024px
-*/
-            
-            @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-                /* CSS */
-                .mobile {
-                    visibility: hidden;
-                    clear: both;
-                    display: none;
-                }
-                .map-width {
-                    width: 50%;
-                }
-                .Master_Header_Menu_Horizontal {
-                    position: sticky;
-                }
-                .Master_Header_Menu_Horizontal ul li {
-                    display: none;
-                    line-height: 50px;
-                    padding: 0px 15px;
-                    text-align: center;
-                }
-                .iframe-container iframe {
-                    height: 30%;
-                    width: 80%;
-                }
-                .col-25 {
-                    margin: auto;
-                    width: 70%;
-                    margin-top: 5px;
-                }
-                .font-size-card {
-                    font-size: 16px;
-                }
-                video {
-                    width: 100%;
-                    max-height: 100%;
-                }
-            }
-            /* 
-##Device = Low Resolution Tablets, Mobiles (Landscape)
-##Screen = B/w 481px to 767px
-*/
-            
-            @media (min-width: 481px) and (max-width: 767px) {
-                /* CSS */
-                .desktop {
-                    visibility: hidden;
-                    clear: both;
-                    display: none;
-                }
-                .Master_Header_Menu_Horizontal {
-                    position: sticky;
-                }
-                .Master_Header_Menu_Horizontal ul li {
-                    display: none;
-                    line-height: 50px;
-                    padding: 0px 15px;
-                    text-align: center;
-                }
-                .iframe-container iframe {
-                    /* height: ; */
-                    width: 100%
-                }
-                .About_Contact_Form_Title {
-                    font-weight: bolder;
-                    font-size: 18px;
-                    margin-bottom: 1px;
-                }
-                .About_Contact_Form_Title_Header {
-                    font-weight: bolder;
-                    font-size: 25px;
-                    margin-bottom: 1px;
-                }
-                video {
-                    width: 100%;
-                    max-height: 100%;
-                }
-                .col-25,
-                .col-75,
-                input[type=submit] {
-                    margin: auto;
-                    width: 90%;
-                    margin-top: 0;
-                }
-                .font-size-card {
-                    font-size: 22px;
-                }
-            }
-            /* 
-##Device = Most of the Smartphones Mobiles (Portrait)
-##Screen = B/w 320px to 479px
-*/
-            
-            @media (min-width: 320px) and (max-width: 480px) {
-                /* CSS */
-                .desktop {
-                    visibility: hidden;
-                    clear: both;
-                    display: none;
-                }
-                .Master_Header_Menu_Horizontal {
-                    position: sticky;
-                }
-                .Master_Header_Menu_Horizontal ul li {
-                    display: none;
-                    line-height: 50px;
-                    padding: 0px 15px;
-                    text-align: center;
-                }
-                .iframe-container iframe {
-                    /* height: 992; */
-                    width: 100%;
-                }
-                .About_Contact_Form_Title {
-                    font-weight: bolder;
-                    font-size: 18px;
-                    margin-bottom: 1px;
-                }
-                .About_Contact_Form_Title_Header {
-                    font-weight: bolder;
-                    font-size: 25px;
-                    margin-bottom: 1px;
-                }
-                video {
-                    width: 100%;
-                    max-height: 100%;
-                }
-                .col-25,
-                .col-75,
-                input[type=submit] {
-                    margin: auto;
-                    width: 95%;
-                    margin-top: 0;
-                }
-                .font-size-card {
-                    font-size: 22px;
-                }
-            }
-        </style>
+
 
 
         <!-- end css for navigation -->
@@ -598,7 +260,6 @@ version="1.0" encoding="utf-8" ?>
         <div class="Master_Container">
             <div class="Master_Container_Body">
 
-
                 <a href="#" title="TopPage"></a>
                 <div class="PG_InnerPage_Content PG_Pages_Home">
                     <div style="display: none">
@@ -612,40 +273,108 @@ version="1.0" encoding="utf-8" ?>
                             <span id="ContentPlaceHolderBody_HiddenHeader_Label_H2_B">BLUCLAD - Home</span>
                         </h2>
                     </div>
-                    <img alt="Logo.png" title="Home1" style="width: 100%;" height="50%" class="PG_ImageReplace desktop" id="PG_ImageReplace" newsrc="https://shashikantshahprogold.github.io/bluclade/images/about-us-banner-desktop.png" src="https://www.progold.com/PG_Resources/PG_Images/dummy.png"
+
+                    <img alt="Logo.png" title="Home1" style="width: 100%;" height="50%" class="PG_ImageReplace desktop" id="PG_ImageReplace" newsrc="https://www.progold.com/apps/BC_Website//Resources/Images/Pages/Home/Home2.jpg" src="https://www.progold.com/PG_Resources/PG_Images/dummy.png"
                     />
-                    <img alt="Logo.png" title="Home1" style="width: 100%;" height="50%" class="PG_ImageReplace mobile" id="PG_ImageReplace" newsrc="https://shashikantshahprogold.github.io/bluclade/images/about-us-banner.png" src="https://www.progold.com/PG_Resources/PG_Images/dummy.png"
+                    <img alt="Logo.png" title="Home1" style="width: 100%;" height="50%" class="PG_ImageReplace mobile" id="PG_ImageReplace" newsrc="https://www.progold.com/apps/BC_Website//Resources/Images/Pages/Home/Home2.jpg" src="https://www.progold.com/PG_Resources/PG_Images/dummy.png"
                     />
 
-                    <div class="Home_Section">
-                        <div class="Home_Title" style="margin-top: -5px;">
-                            <span>
-                            VERNICIATURA
-                        </span>
-                        </div>
-                        <span class="Home_LineRow" style="width: 140px;">&nbsp;</span>
-                        <div class="Home_Text" style="max-width: 1000px; margin: auto;margin-top:10px; text-align: justify; padding: 0px 10px;">
-                            <span>Verniciatura lucida, opaca o trasparente……Lorem ipsum dolor sir amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et eccumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</span>
-                        </div>
-                    </div>
-                    <div class="Home_Section" style="padding-top: 0px; padding-right: 0px; padding-bottom: 40px; padding-left: 0px;">
-                        <video width="100%" height="100%" loop="" muted="true" autoplay="true" poster="https://www.progold.com/PG_Resources/PG_Videos/WeAreProgold.png">
-                                <source src="https://www.progold.com/PG_Resources/PG_Videos/WeAreProgold.mp4" type="video/mp4"></video>
+
+                    <div style="width:100%; height:600px; ">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2877.2626776674647!2d11.154788227543422!3d43.85038393039746!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdf75fc8bbbc54299!2sBLUCLAD%20SPA!5e0!3m2!1sen!2sit!4v1611308145139!5m2!1sen!2sit" width="100%"
+                            height="419" frameborder="0" style="min-height:600px;  " allowfullscreen=""></iframe>
                     </div>
 
+                    <div class="Home_Section" style=" background-color: #f2f2f2;">
+                        <div class="Home_Title">
+                            <span>I NOSTRI CONTATI</span>
+                        </div>
+                        <span class="Home_LineRow" style="width: 160px;">&nbsp;</span>
+                        <div class="Home_Text" style="max-width: 1400px; margin: auto;margin-top:10px;">
+                            <!-- <div class="Home_Text"> -->
+                            <div class="Home_TextFocus">
+                                <div class="Home_TextFocus_Head">
+                                    <span style="font-weight: bolder; font-size: 20px;">Bluclad S.p.A.</span>
+                                    <br />
+                                </div>
+                                <div class="Home_TextFocus_Body" style="padding: 0px 5px;">
+                                    <p style="font-size: 18px;">
+                                        Via di Popolino, 1T<br> 59100 Prato (PO)<br>PEC: bluclad@pec.bluclad.it p.iva, <br> c.f. e reg. imp.: 02063910976 R.E.A. 497097 <br> cap. soc.1.000.100,00 i.v.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="Home_TextFocus">
+                                <div class="Home_TextFocus_Head">
+                                    <span style="font-weight: bolder; font-size: 20px;">Sede operativa Principale:</span>
+                                </div>
+                                <div class="Home_TextFocus_Body" style="padding: 0px 5px;">
+                                    <p style="font-size: 18px;">
+                                        Via di le Prata, 62<br> 50041 Calenzano (FI)<br> Tel. +39 055 7762500<br> Fax +39 055 7762599<br>
+                                        <a href="mailto:info@bluclad.it">e-mail:
+                                        info@bluclad.it</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="Home_TextFocus">
+                                <div class="Home_TextFocus_Head">
+                                    <span style="font-weight: bolder; font-size: 20px;">Sedi operative Triveneto:</span>
+                                </div>
+                                <div class="Home_TextFocus_Body" style="padding: 0px 5px;">
+                                    <p style="font-size: 18px;">
+                                        Via L. Manzoni, 66/C-D<br> Via L. Manzoni, 68/A-B-C-D<br> 31015 Conegliano (TV)<br> Tel. +39 0438 1740014<br> Fax +39 0438 1740015<br>
+                                        <a href="mailto:info@bluclad.it">e-mail:
+                                        info@bluclad.it</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="Home_Section" style="padding-top: 0px;">
-                        <div class="Home_Text" style="max-width: 1000px; margin: auto;margin-top:10px; text-align: justify; padding: 0px 10px; ">
-                            <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et eccumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit.</span>
+                        <div class="container" style="padding: 50px 0px; margin: 0 auto; max-width: 900px;">
+                            <div class="About_Contact_Form_Title">
+                                <span>
+                        LAVORA CON NOI
+                    </span>
+                            </div>
+                            <span class="About_Contact_Form_Title_LineRow">&nbsp;</span>
+                            <form id="userdetail">
+                                <div>
+                                    <label for="nome" style="float: left;">Nome e Cognome*</label>
+                                    <input type="text" id="nome" name="nome">
+                                </div>
+                                <div>
+                                    <label for="cognome" style="float: left;">Indirizzo*</label>
+                                    <input type="text" id="cognome" name="cognome">
+                                </div>
+                                <div>
+                                    <label for="email" style="float: left;">Paese*</label>
+                                    <input type="email" id="email" name="email">
+                                </div>
+                                <div>
+                                    <label for="messaggio" style="float: left;">Regione*</label>
+                                    <input type="text" name="subject" id="subject">
+                                </div>
+                                <div>
+                                    <label for="messaggio" style="float: left;">Telefono*</label>
+                                    <input type="text" name="subject" id="subject">
+                                </div>
+                                <div>
+                                    <label for="messaggio" style="float: left;">Email*</label>
+                                    <input type="email" name="subject" id="subject">
+                                </div>
+                                <div style="padding: 10px 0px">
+                                    <label for="messaggio" style="float: left;">Allega CV*</label>
+                                    <input type="file" name="subject" id="subject" style="float: left; padding-left: 20px;">
+                                </div>
+
+                                <div>
+                                    <div class="Contact_Form_Button" style="padding-top: 20px;">
+                                        <input type="submit" value="Invia" style="width: 40%; ">
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
-
-
-                    <!-- We have to code here -->
-
-
-
-
-
                 </div>
 
                 <div class="Master_Footer">
@@ -722,9 +451,9 @@ version="1.0" encoding="utf-8" ?>
                             © Copyright 2021
 
                             <span>
-                    <a title="Bluclad S.p.A." target="_blank" href="Home.aspx?sl=GB">Bluclad S.p.A.</a>
-                </span> - VAT : <span>IT02063910976</span> - Address : <span>Via di Popolino, 1T - 59100 Prato
-                    (PO)</span> - PEC : <span></span> - REA : <span>497097</span> - cap.soc. :
+                            <a title="Bluclad S.p.A." target="_blank" href="Home.aspx?sl=GB">Bluclad S.p.A.</a>
+                        </span> - VAT : <span>IT02063910976</span> - Address : <span>Via di Popolino, 1T - 59100 Prato
+                            (PO)</span> - PEC : <span></span> - REA : <span>497097</span> - cap.soc. :
                             <span>1.000.100,00 i.v.</span>
                         </div>
                     </div>
@@ -782,6 +511,9 @@ version="1.0" encoding="utf-8" ?>
             LoadCss("https://www.progold.com/PG_Resources/PG_CSS/PG_Fonts_Lato.css");
             LoadCss("../Resources/Style/Navigation.css")
             LoadCss("../Resources/Style/MediaQuery.css");
+            LoadCss("../Resources/Style/about.css");
+            LoadCss("../Resources/Style/Input-form.css");
+            LoadCss("../Resources/Style/Container.css");
             DisplayProfileCookie();
         </script>
     </body>
